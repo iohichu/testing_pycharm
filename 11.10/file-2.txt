@@ -1,0 +1,37 @@
+ 
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        468M     0  468M   0% /dev
+tmpfs           477M     0  477M   0% /dev/shm
+#!/bin/bash
+
+USER="Oleksandr"
+echo "Скрипт запущений из директории: $(pwd)"
+  997  cd /tmp
+  998  tree
+  999  ls -l
+ 1000  nano file.txt
+ 1001  ll
+ 1002  df -h | head -3
+ 1003  df -h | head -3 >> file.txt
+ 1004  chmod g+wx file.txt
+ 1005  ll
+ 1006  chmod uo-rwx file.txt
+ 1007  ll
+ 1008  > /opt/290724-ptm/OOlepir/myfirstbashscript.sh
+ 1009  chmod u+x /opt/290724-ptm/OOlepir/myfirstbashscript.sh
+ 1010  ll /opt/290724-ptm/OOlepir/myfirstbashscript.sh
+ 1011  chmod u-x /opt/290724-ptm/OOlepir/myfirstbashscript.sh
+ 1012  ll /opt/290724-ptm/OOlepir/myfirstbashscript.sh
+ 1013  cd /opt/290724-ptm/OOlepir/
+ 1014  chmod u+x myfirstbashscript.sh
+ 1015  ll
+ 1016  nano myfirstbashscript.sh 
+ 1017  cat myfirstbashscript.sh >> /tmp/file.txt
+ 1018  cd /tmp
+ 1019  ll
+ 1020  chmod u+rwx file.txt
+ 1021  ll
+ 1022  cat /opt/290724-ptm/OOlepir/myfirstbashscript.sh >> /tmp/file.txt
+ 1023  cat file.txt
+ 1024  history
+ 1025  history >> file.txt
